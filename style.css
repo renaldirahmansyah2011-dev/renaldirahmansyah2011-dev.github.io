@@ -1,119 +1,252 @@
+/* ============================= */
+/* GOOGLE FONT */
+/* ============================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Poppins,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
+
+/* ============================= */
 
 body{
 
-    background:url("images/naruto-bg.jpg");
-    background-size:cover;
-    background-position:center;
-    height:100vh;
+background:#050505;
+color:white;
+overflow-x:hidden;
 
 }
 
-.overlay{
+/* ============================= */
 
-    background:rgba(0,0,0,.65);
-    width:100%;
-    height:100vh;
+#particles-js{
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-}
-
-.card{
-
-    width:360px;
-
-    background:rgba(255,255,255,.12);
-
-    backdrop-filter:blur(10px);
-
-    border:2px solid orange;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    color:white;
-
-    padding:30px;
-
-    box-shadow:0 0 30px orange;
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
 
 }
 
-.profil{
+/* ============================= */
 
-    width:170px;
-    height:170px;
+body::before{
 
-    border-radius:50%;
+content:"";
 
-    object-fit:cover;
+position:fixed;
 
-    border:5px solid orange;
+left:0;
+top:0;
 
-    margin-bottom:15px;
+width:100%;
+height:100%;
 
-}
+background:url("assets/images/naruto-bg.jpg");
 
-h1{
+background-size:cover;
 
-    color:orange;
-    margin-bottom:8px;
+background-position:center;
 
-}
+opacity:.15;
 
-h3{
+filter:blur(2px);
 
-    color:#FFD700;
-    margin-bottom:20px;
-
-}
-
-.info{
-
-    text-align:left;
-
-    margin-top:15px;
-    line-height:2;
+z-index:-2;
 
 }
 
-button{
+/* ============================= */
 
-    margin-top:25px;
+header{
 
-    width:100%;
+position:fixed;
 
-    padding:12px;
+width:100%;
 
-    background:orange;
+padding:20px 10%;
 
-    border:none;
+display:flex;
 
-    color:white;
+justify-content:space-between;
 
-    font-size:17px;
+align-items:center;
 
-    border-radius:10px;
+background:rgba(0,0,0,.25);
 
-    cursor:pointer;
+backdrop-filter:blur(15px);
 
-    transition:.3s;
+border-bottom:1px solid rgba(255,255,255,.1);
+
+z-index:999;
 
 }
 
-button:hover{
+.logo{
 
-    background:#ff5500;
+font-size:30px;
 
-    transform:scale(1.05);
+font-weight:700;
+
+color:#ff9100;
+
+text-shadow:0 0 20px orange;
+
+letter-spacing:2px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+transition:.4s;
+
+position:relative;
+
+}
+
+nav a:hover{
+
+color:orange;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+height:2px;
+
+width:0;
+
+background:orange;
+
+transition:.3s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* ============================= */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:120px 10%;
+
+gap:50px;
+
+}
+
+.hero-left{
+
+max-width:650px;
+
+}
+
+.hero-left h3{
+
+font-size:28px;
+
+color:orange;
+
+}
+
+.hero-left h1{
+
+font-size:75px;
+
+font-weight:800;
+
+margin:15px 0;
+
+line-height:1.1;
+
+}
+
+.hero-left h2{
+
+font-size:28px;
+
+color:#58b6ff;
+
+margin-bottom:20px;
+
+}
+
+.hero-left p{
+
+font-size:18px;
+
+line-height:1.8;
+
+opacity:.85;
+
+}
+
+#btn{
+
+margin-top:35px;
+
+padding:16px 45px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(45deg,#ff9800,#ff5722);
+
+color:white;
+
+cursor:pointer;
+
+box-shadow:0 0 25px orange;
+
+transition:.4s;
+
+}
+
+#btn:hover{
+
+transform:translateY(-5px) scale(1.05);
+
+box-shadow:0 0 45px orange;
 
 }
