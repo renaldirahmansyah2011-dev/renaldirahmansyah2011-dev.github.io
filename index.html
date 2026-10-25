@@ -3,40 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identitas Diri | Naruto Theme</title>
+    <title>Renaldi | Shinobi Profile</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
 
-<div class="overlay">
+<!-- ================= LOADING ================= -->
+
+<div id="loading">
+    <div class="loader"></div>
+    <h2>Loading Shinobi Data...</h2>
+</div>
+
+<!-- ================= PARTICLES ================= -->
+
+<div id="particles-js"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        🍥 SHINOBI
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#skill">Skill</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<div class="hero-left">
+
+<h3>Selamat Datang</h3>
+
+<h1>RENALDI RAHMANSYAH</h1>
+
+<h2>Genin • X TKJ • Konohagakure</h2>
+
+<p>
+Saya adalah siswa SMK yang menyukai dunia teknologi,
+coding, jaringan komputer, serta anime Naruto.
+</p>
+
+<button id="btn">
+Dattebayo!
+</button>
+
+</div>
+
+<div class="hero-right">
+
+<div class="circle">
+
+<img src="assets/images/foto.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h1 class="title">
+IDENTITAS SHINOBI
+</h1>
+
+<div class="cards">
 
 <div class="card">
 
-    <img src="images/foto.jpg" class="profil">
+<i class="fa-solid fa-user"></i>
 
-    <h1>RENALDI RAHMANSYAH</h1>
+<h2>Nama</h2>
 
-    <h3>忍者 PROFILE</h3>
+<p>
+Renaldi Rahmansyah
+</p>
 
-    <div class="info">
-        <p>🎓 Kelas : X SMK</p>
-        <p>💻 Jurusan : Teknik Jaringan Komputer</p>
-        <p>📍 Alamat : Kolaka, Sulawesi Tenggara</p>
-        <p>🎂 Umur : 15 Tahun</p>
-        <p>❤️ Hobi : Bermain Game & Belajar Coding</p>
-    </div>
+</div>
 
-    <button onclick="pesan()">
-        Dattebayo!
-    </button>
+<div class="card">
+
+<i class="fa-solid fa-school"></i>
+
+<h2>Kelas</h2>
+
+<p>
+X TKJ
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h2>Alamat</h2>
+
+<p>
+Kolaka, Sulawesi Tenggara
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-gamepad"></i>
+
+<h2>Hobi</h2>
+
+<p>
+Gaming, Coding, Anime
+</p>
 
 </div>
 
 </div>
+
+</section>
+
+<!-- ================= SKILL ================= -->
+
+<section id="skill">
+
+<h1 class="title">
+SHINOBI STATUS
+</h1>
+
+<div class="skill">
+
+<label>HTML</label>
+
+<div class="bar">
+
+<div class="fill html">
+90%
+</div>
+
+</div>
+
+<label>CSS</label>
+
+<div class="bar">
+
+<div class="fill css">
+85%
+</div>
+
+</div>
+
+<label>JavaScript</label>
+
+<div class="bar">
+
+<div class="fill js">
+70%
+</div>
+
+</div>
+
+<label>GitHub</label>
+
+<div class="bar">
+
+<div class="fill github">
+75%
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<h1 class="title">
+
+GALERI
+
+</h1>
+
+<div class="gallery">
+
+<img src="assets/images/1.jpg">
+
+<img src="assets/images/2.jpg">
+
+<img src="assets/images/3.jpg">
+
+<img src="assets/images/4.jpg">
+
+<img src="assets/images/5.jpg">
+
+<img src="assets/images/6.jpg">
+
+</div>
+
+</section>
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote">
+
+<h1>
+
+"Kerja keras lebih berharga daripada bakat yang tidak digunakan."
+
+</h1>
+
+<p>- Naruto Uzumaki -</p>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h1 class="title">
+
+SOCIAL
+
+</h1>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Renaldi Rahmansyah | Naruto Theme Website
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 <script src="script.js"></script>
 
