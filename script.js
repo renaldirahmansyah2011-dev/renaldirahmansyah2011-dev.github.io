@@ -1,3 +1,5 @@
-function pesan() {
-    alert("Halo! Selamat datang di website identitas saya.");
+function pesan(){
+
+    alert("Dattebayo! Selamat datang di Website Identitas Renaldi.");
+
 }
